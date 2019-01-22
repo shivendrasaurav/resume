@@ -1,0 +1,115 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS</title>
+    <link href="mars.css" rel="stylesheet" type="text/css">
+    <script>
+        function showsidenav(){
+            document.getElementById("nav1").style.display=("block");
+        }
+        function hidesidenav(){
+            document.getElementById("nav1").style.display=("none");
+        }
+    </script>
+</head>
+<body onload="hidesidenav()">
+    <h1>Input Controls : </h1>
+    <input type="text" /><br>
+    <label>Text </label><br>
+    <input type="number" /><br>
+    <label>Number </label><br>
+    <input type="password" /><br>
+    <label>Password </label><br>
+    <h4>Select A Date : </h4>
+    <select class="date">
+        <option>Day</option>
+        <option>Day</option>
+        <option>Day</option>
+    </select>&nbsp;&nbsp;
+    <select class="month">
+        <option>Month</option>
+        <option>Month</option>
+        <option>Month</option>
+    </select>&nbsp;&nbsp;
+    <select class="year">
+        <option>Year</option>
+        <option>Year</option>
+        <option>Year</option>
+    </select>
+    <h4>Checkboxes : </h4>
+    <div class="check">Checked : &nbsp;&nbsp;
+    <input type="checkbox" checked/>
+    <button class="checkmark">X</button>
+    </div><br>
+    <div class="check">Unchecked : &nbsp;&nbsp;
+    <input type="checkbox" />
+    <button class="checkmark">X</button>
+    </div>
+    <h4>Radio Buttons : </h4>
+    <div class="check">Checked : &nbsp;&nbsp;
+    <input type="radio" checked name="rad"/>
+    <button class="radiomark">X</button>
+    </div><br>
+    <div class="check">Unchecked : &nbsp;&nbsp;
+    <input type="radio"  name="rad"/>
+    <button class="radiomark">X</button>
+    </div>
+    <h4>Toggle Button : </h4>
+    <label>On : </label>
+    <div class="switch">
+    <input type="checkbox" checked/>
+    <span class="toggle"></span>
+    </div>
+    <label>Off : </label>
+    <div class="switch">
+    <input type="checkbox"/>
+    <span class="toggle"></span>
+    </div><br>
+    <h1>The Grid : </h1>
+    <div class="row">
+    <div class="col large3 medium6"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    <div class="col large3 medium6"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    <div class="col large3 medium6"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    <div class="col large3 medium6"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    </div>
+    <div class="row">
+    <div class="col large3 medium4"><P>Lorem Ipsum Orem Dum Bum</p></div>
+    <div class="col large6 medium8"><p>Lorem Ipsum Orem Dum Bum Even More Random Text Incoming</p></div>
+    <div class="col large3 medium4"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    </div>
+    <div class="row">
+    <div class="col large8 medium6"><p>Lorem Ipsum Orem Dum Bum Even More Random Text Incoming And It Will Take More Space Than Before Also, It's Gonna Be Too Much Of Space</p></div>
+    <div class="col large4 medium6"><p>Lorem Ipsum Orem Dum Bum</p></div>
+    </div>
+    <div class="row">
+    <div class="col large12 medium12"><p>Lorem Ipsum Orem Dum Bum Even More Random Text Incoming And It Will Take More Space Than Before Also, It's Gonna Be Too Much Of Space</p></div>
+    </div>
+    <div class="row">
+        <div class="col large3 medium4"><p><button class="small primary">Small</button></p></div>
+        <div class="col large3 medium4"><p><button class="large secondary">Large</button></p></div>
+        <div class="col large3 medium4"><p><button class="small circular alert">Small Circular</button></p></div>
+        <div class="col large3 medium4"><p><button class="large circular success">Large Circular</button></p></div>
+    </div>
+    <div class="topnav">
+        <button class="tab primary left">MARS</button>
+        <button class="tab primary right">Item 1</button>
+        <button class="tab primary right">Item 2</button>
+        <button class="tab primary right">Item 3</button>
+        <button class="tab primary right active">Item 4</button>
+        <button class="tab primary right">Item 5</button>
+    </div>
+    <div class="sidenav">
+        <div class="row"><span class="left">&nbsp;&nbsp;</span><button class="mico primary left" onclick="showsidenav();">=</button>        
+        <button class="mico right">MARS</button>
+        </div>
+        <div id="nav1" class="row">
+            <button class="mico right" onclick="hidesidenav();">X</button>
+            <div class="mtab">Item 1</div>
+            <div class="mtab">Item 2</div>
+            <div class="mtab">Item 3</div>
+            <div class="mtab">Item 4</div>
+            <div class="mtab">Item 5</div>
+        </div>
+    </div>
+</body>
+</html>
