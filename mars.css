@@ -26,7 +26,10 @@ body{ background: #fdfde8; }
     width: 96%;
 }
 
-.col{display: inline-block;}
+.col{
+    display: inline-block;
+    margin-left: 12.5%;
+}
 
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
@@ -36,6 +39,7 @@ body{ background: #fdfde8; }
         margin:-2%;
         padding: 15px;
     }
+    .col{margin-left:auto;}
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -407,4 +411,8 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     width: 50px;
     height: 50px;
     border-radius: 360px;
+}
+
+.pad{
+    margin:2px;
 }
