@@ -1,40 +1,51 @@
 *{
     box-sizing: border-box;
     transition: 300ms;
-    background: inherit;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{ background: #fdfde8; }
 
+.inverted{background: #000; color: #FFF;}
 .primary{ background: #193c50; color: #ffe100; }
 .secondary{ background: #26a69a; color: #ffe100; }
 .alert{ background: #de1738; color: #fff; }
 .success{ background: #008000; color: #FFF; }
+.fullscreen{
+    width: 101%;
+    min-height: 101%;
+    margin: -0.5%;
+}
 
-.center{text-align: center;}
 .right{float: right;}
 .left{float: left;}
 .row{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 96%;
-    overflow-y: hidden;
 }
 
 .col{display: inline-block;}
 
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
+    .fullscreen{
+        min-width: 104%;
+        height: auto;
+        margin:-2%;
+        padding: 15px;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
     .row{display: flex;}
-    .medium2{width: 15%; flex: 0;}
-    .medium4{width: 30%; }
-    .medium6{width: 45%; }
-    .medium8{width: 60%; }
-    .medium10{width: 85%; }
-    .medium12{width: 95%; }
+    .large1,.large2{width: 15%; flex: 0;}
+    .large3,.large4{width: 30%; }
+    .large5,.large6{width: 45%; }
+    .large7,.large8{width: 60%; }
+    .large9,.large10{width: 85%; }
+    .large11,.large12{width: 95%; }
 }
 
 @media (min-width: 1000px) {
@@ -53,9 +64,6 @@ body{ background: #fdfde8; }
     .large12{width: 96%; }
 }
 
-body{
-    font-family: 'Segoe UI','Roboto';
-}
 
 label{
     font-weight: 600;
@@ -68,9 +76,11 @@ input[type=text],input[type=number],input[type=password]{
     border-bottom: 2px solid #193c50;
     width: 80%;
     font-size: 20px;
+    background: transparent;
 }
 
 input[type=text]:focus,input[type=number]:focus,input[type=password]:focus{
+    background: transparent;
     border-bottom: 2px solid #ffe100;
 }
 
@@ -80,6 +90,7 @@ select{
     border-right: none;
     border-bottom: 2px solid #193c50;
     font-size: 16px;
+    background: transparent;
 }
 select.date{ width: 60px; }
 select.month{ width: 80px; }
@@ -181,6 +192,16 @@ button.secondary:focus{
     color: #000 ;
     background: #ffe100 ;
 }
+button.alert:hover{
+    border: 2px solid red;
+    background: #FFF;
+    color: red;
+  }
+button.success:hover{
+    border: 2px solid green;
+    background: #FFF;
+    color: green;
+  }
 
 .small{ min-width: 80px; height: 40px; font-size: 16px;}
 .large{ min-width: 160px; height: 80px; font-size: 32px;}
@@ -204,7 +225,25 @@ button.primary.tab:focus{
     background: #ffe100;
     color: #000;
 }
-
+.floattab{
+    border-radius: 360px;
+    border: none;
+    height: 50px;
+    font-size: 4px;
+    min-width: 50px;
+    background: red;
+    color: red;
+    margin: 2px;
+}
+.floattab.booknow{
+    background: #000;
+    color: #000;
+}
+.floattab:hover{
+    font-size: 24px;
+    color: wheat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 @media (min-width: 700px) {
     .topnav{
         position: fixed;
@@ -212,12 +251,21 @@ button.primary.tab:focus{
         z-index: 9;
         margin-left: -1%;
         width: 100.38%;
-        background: #26a69a;
+        background: transparent;
+        height: 60px;
+        padding-top: 5px;
     }
+    .tab.menu{color: #FFF;}
     .sidenav{display: none;}
+    .floatnav{
+        position : fixed;
+        z-index: 2;
+        left: 50px;
+        top: 20%;
+    }
 }
 @media (max-width: 700px) {
-    .topnav{display: none;}
+    .topnav,.floatnav{display: none;}
     li{ list-style-type: none; }
     .sidenav{
         position: fixed;
@@ -225,7 +273,6 @@ button.primary.tab:focus{
         z-index: 9;
         margin-left: -2.5%;
         width: 100.5%;
-        background: #26a69a;
     }
     .mico{
         width: 50px;
@@ -241,9 +288,123 @@ button.primary.tab:focus{
     width: 50px;
     height: 50px;
     }
-    #nav1{display: none;}
+    #nav1{
+        display: none;
+        padding: 20px;
+        font-size: 28px;
+        padding-bottom: 200%;
+        text-align: center;
+    }
     .mtab{
         padding: 5px;
-        padding-left: 45px;
     }
+}
+
+.xlarge{
+    min-width: 250px;
+    height: 80px;
+    font-size: 36px;
+}
+
+.center{
+    display: block;
+    margin: auto;
+}
+.followicon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+
+}
+a,a:visited,a:active{color:initial; text-decoration:none;}
+
+.polaroid{
+    display: block;
+    margin: auto;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10%;
+}
+.polaroid:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.person{
+    height: 300px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 4px;
+}
+.name{
+    padding: 4px;
+    display: inline;
+    margin: 4px;
+}
+.name:hover{
+    background: red;
+    color: #FFF;
+}
+.overlaycontainer:hover .overlay{
+    display: block;
+    opacity: 1;
+    transition: 300ms;
+}
+.overlaycontainer{
+  height:300px;
+  width: 350px;
+  position: relative;
+}
+.overlay{
+  opacity: 0;
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #000;
+  color: #FFF;
+  width: inherit;
+  height: inherit;
+  transition: 300ms;
+}
+.modalcontainer{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #000;
+    color: #FFF;
+    display: none;
+}
+.modal{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #000;
+  color: #FFF;
+  width: 80%;
+  height: 88%;
+  margin: auto;
+  transition: 300ms;
+}
+
+
+.star{
+    color:#de1738;
+    width: 25px;
+    height: 25px;
+    background: #de1738;
+    display: inline-block;
+    border-radius: 90px;
+}
+
+.smicon{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
 }
