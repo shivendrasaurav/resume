@@ -9,15 +9,14 @@
 }
 
 /*Typography*/
-h1{font-size: 500%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h2{font-size: 450%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h3{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h4{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h5{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h6{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
-h7{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h1{font-size: 400%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h2{font-size: 350%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h3{font-size: 300%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h4{font-size: 250%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h5{font-size: 200%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
+h6{font-size: 150%; font-weight: 200; margin: 10px; margin-left: 0px; text-align: left;}
 
-a,p,pre{font-size: 24px; font-weight: 100;}
+a,p,pre{font-size: 16px; font-weight: 100;}
 
 .ta_left{text-align: left;}
 .ta_right{text-align: right;}
@@ -110,15 +109,15 @@ footer{position: relative;}
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.primary_blue{background: #08415C; color:#FFF;}
-.primary_green{background: #28B85B; color:#FFF;}
+.primary_blue{background: rgba(8, 129, 185, 0.548); color:#FFF;}
+.primary_green{background: rgba(13, 187, 56, 0.493); color:#FFF;}
 .primary_red{background: #CC2936; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
 
 
-.secondary_blue{background: #06A7DD; color:#FFF;}
-.secondary_green{background: #06A77D; color:#FFF;}
+.secondary_blue{background: rgba(6, 167, 221, 0.616); color:#FFF;}
+.secondary_green{background: rgba(6, 167, 124, 0.637); color:#FFF;}
 
 /*Controls*/
 
@@ -151,7 +150,7 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     -moz-appearance: none;
     appearance: none;
     border: none;
-    font-size: 1.2em;
+    font-size: auto;
     outline: none;
     overflow: hidden;
     height: 60px;
@@ -653,3 +652,5 @@ a li.navigation_item{border:none; text-decoration: none;}
 li.navigation_item::before{display: none;}
 .navigation_container .navigation_button:checked ~ .navigation_group{display: block;}
 .nav_disp{padding-right: 10px;}
+
+li{font-size: 14px;}
