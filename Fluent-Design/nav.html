@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Fluent Design For Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link href="fluent.css" rel="stylesheet" type="text/css">
+        <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script src="fluent.js"></script>
+    </head>
+    <body>
+        <div class="column large12 pivot_container secondary_blue" style="position: fixed;">
+                <a class="pivot_button icon left" onclick="history.back();">
+                    <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
+                </a>
+                <a class="pivot_button icon left" onclick="history.forward();">
+                    <i class="ms-Icon ms-Icon--Forward" aria-hidden="true"></i>
+                </a>
+                <span class="small0 pivot_heading">Fluent Design For Web</span>
+                <a href="controls.html" class="pivot_button right active">Controls</a>
+                <a href="styles.html" class="pivot_button right">Styles</a>
+                <a href="index.html" class="pivot_button right">Home</a>
+        </div><br><br><br><br>
+        <div class="nav_container column large3 medium3 small0">
+                <h5>Fabric UI</h5>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Styles</span><input type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="typography.html"><li class="navigation_item">Typography</li></a>
+                            <a href="elevation.html"><li class="navigation_item">Elevation</li></a>
+                            <a href="colors.html"><li class="navigation_item">Colors</li></a>
+                            <a href="grid.html"><li class="navigation_item">Grid Layout</li></a>
+                            <a href="Icons/fluent-icons.html"><li class="navigation_item">Icon Pack</li></a>
+                        </div>
+                </div><br><br>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Controls</span><input checked type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="inputs.html"><li class="navigation_item">Inputs</li></a>
+                            <a href="utilities.html"><li class="navigation_item">Utilities</li></a>
+                            <a href="surfaces.html"><li class="navigation_item">Surfaces</li></a>
+                            <a href="listsandtables.html"><li class="navigation_item">List and Tables</li></a>
+                            <a href="nav.html"><li class="navigation_item">Navigations</li></a>
+                            <a href="progress.html"><li class="navigation_item">Progress</li></a>
+                        </div>
+                </div>
+        </div>
+        <div class="page_container column large9 medium9 small12 right">
+            <h2>Pivot Menu</h2>
+            <h7>This is an example Pivot Menu</h7><br><br>
+            <div class="column large12 pivot_container" style="display: absolute; background: rgba(125, 125, 125, 0.8);">
+                <a class="pivot_button icon left" onclick="history.back();">
+                    <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
+                </a>
+                <a class="pivot_button icon left" onclick="history.forward();">
+                    <i class="ms-Icon ms-Icon--Forward" aria-hidden="true"></i>
+                </a>
+                <span class="pivot_heading">Pivot Menu</span>
+                <a href="#controls" class="pivot_button right">Item3</a>
+                <a href="#styles" class="pivot_button right">Item2</a>
+                <a href="#" class="pivot_button right">Item1</a>            </div><br><br><br>
+            <h2>Command Bar</h2>
+            <h7>This is an example Command Bar</h7><br><br>
+            <div class="commandbar_container">
+                <button class="commandbar_button">Command_1</button>
+                <button class="commandbar_button">Command_2</button>
+                <button class="commandbar_button">Command_3</button>
+                <button class="commandbar_button">Command_4</button>
+            </div><br><br><br>
+            <h2>Breadcrumbs</h2>
+            <h7>This is a basic breadcrumb navigation bar</h7>
+            <ul class="breadcrumb_container">
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 1</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 2</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 3</li>
+                <span class="breadcrumb_icon">></span><li class="breadcrumb">Folder 4</li>
+            </ul><br><br><br>
+            <h7>This is a breadcrumb navigation bar which uses links</h7>
+            <ul class="breadcrumb_container">
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 1</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 2</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 3</li></a>
+                <span class="breadcrumb_icon">></span><a><li class="breadcrumb">Folder 4</li></a>
+            </ul><br><br><br>
+            <h2>Contextual Menu</h2>
+            <h7>Click on the button to display Contextual Menu</h7>
+            <div class="column large6 small12 medium5">
+                <div class="contextual_container">
+                    <span class="contextual_val">Click to open Contextual Menu</span><input type="checkbox" class="contextual_button">
+                    <div class="contextual_group">
+                        <a href="#"><li class="contextual_item">Item 1</li></a>
+                        <li class="contextual_item">Item 2</li>
+                        <li class="contextual_item">Item 3</li>
+                        <li class="contextual_item">Item 4</li>
+                        <hr>
+                        <li class="contextual_item">Item 5</li>
+                        <li class="contextual_item">Item 6</li>
+                        <li class="contextual_item">Item 7</li>
+                        <li class="contextual_item">Item 8</li>
+                    </div>
+                </div>
+            </div>
+            <div class="column large12 medium12 small12 primary_red">Open in desktop mode to see side navigation</div>
+        </div>
+        <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
+    </body>
+</html>

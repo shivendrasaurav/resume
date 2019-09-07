@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Fluent Design For Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link href="fluent.css" rel="stylesheet" type="text/css">
+        <link href="Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script src="fluent.js"></script>
+
+    </head>
+    <body>
+        <div class="column large12 pivot_container secondary_blue" style="position: fixed;">
+                <a class="pivot_button icon left" onclick="history.back();">
+                    <i class="ms-Icon ms-Icon--Back" aria-hidden="true"></i>
+                </a>
+                <a class="pivot_button icon left" onclick="history.forward();">
+                    <i class="ms-Icon ms-Icon--Forward" aria-hidden="true"></i>
+                </a>
+                <span class="small0 pivot_heading">Fluent Design For Web</span>
+                <a href="controls.html" class="pivot_button right active">Controls</a>
+                <a href="styles.html" class="pivot_button right">Styles</a>
+                <a href="index.html" class="pivot_button right">Home</a>
+        </div><br><br><br><br>
+        <div class="nav_container column large3 medium3 small0">
+                <h5>Fabric UI</h5>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Styles</span><input type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="typography.html"><li class="navigation_item">Typography</li></a>
+                            <a href="elevation.html"><li class="navigation_item">Elevation</li></a>
+                            <a href="colors.html"><li class="navigation_item">Colors</li></a>
+                            <a href="grid.html"><li class="navigation_item">Grid Layout</li></a>
+                            <a href="Icons/fluent-icons.html"><li class="navigation_item">Icon Pack</li></a>
+                        </div>
+                </div><br><br>
+                <div class="navigation_container">
+                        <span class="navigation_val"><i class="ms-Icon ms-Icon--Chevronright nav_disp"></i>Controls</span><input checked type="checkbox" class="navigation_button">
+                        <div class="navigation_group">
+                            <a href="inputs.html"><li class="navigation_item">Inputs</li></a>
+                            <a href="utilities.html"><li class="navigation_item">Utilities</li></a>
+                            <a href="surfaces.html"><li class="navigation_item">Surfaces</li></a>
+                            <a href="listsandtables.html"><li class="navigation_item">List and Tables</li></a>
+                            <a href="nav.html"><li class="navigation_item">Navigations</li></a>
+                            <a href="progress.html"><li class="navigation_item">Progress</li></a>
+                        </div>
+                </div>
+        </div>
+        <div class="page_container column large9 medium9 small12 right">
+            <h2>Basic Inputs</h2>
+            <div class="column large6 medium6 small12">
+                <input type="text" placeholder="Text Input"><br><br>
+                <input type="password" placeholder="Password Input"><br><br>
+                <input type="tel" placeholder="Tel Input"><br><br>
+                <input type="number" placeholder="Number Input"><br><br>
+            </div>
+            <div class="column large6 medium6 small12 right">
+                <input type="email" placeholder="Email Input"><br><br>
+                <input type="date" placeholder="Date Input"><br><br>
+                <input type="datetime-local" placeholder="Datetime Local Input"><br><br>
+                <input type="month" placeholder="Month Input"><br><br>
+            </div>
+            <h2>More Inputs</h2>
+            <div class="column large6 medium10 small12">
+                <span style="font-size: 36px; font-weight: 200">Range</span><br><br><br>
+                <input type="range" placeholder="Text Input" id="slider"><br><br>
+                <button id="slidervalue" class="zi2"></button><br><br><br>
+                <span style="font-size: 36px; font-weight: 200">Rating</span><br><br><br>
+                <input type="radio" name="rating" value="1" onclick="document.getElementById('ratingvalue').innerHTML = 1">
+                <input type="radio" name="rating" value="2" onclick="document.getElementById('ratingvalue').innerHTML = 2">
+                <input type="radio" name="rating" value="3" onclick="document.getElementById('ratingvalue').innerHTML = 3">
+                <input type="radio" name="rating" value="4" onclick="document.getElementById('ratingvalue').innerHTML = 4">
+                <input type="radio" name="rating" value="5" onclick="document.getElementById('ratingvalue').innerHTML = 5"><br><br>
+                <button id="ratingvalue" class="zi2">0</button><br><br><br>
+            </div>
+            <div class="column large6 medium10 small12">
+                <span style="font-size: 36px; font-weight: 200">Switch</span><br><br><br>
+                <div  class="column large6 medium4 small4">
+                    <p>On Switch</p>
+                    <div class="switch">
+                            <input type="checkbox" checked/>
+                            <span class="toggle"></span>
+                    </div>
+                </div>
+                <div  class="column large6 medium4 small4 right">
+                    <p>Off Switch</p>
+                    <div class="switch">
+                            <input type="checkbox"/>
+                            <span class="toggle"></span>
+                    </div>
+                </div><br><br><br><br><br>
+            </div>
+            <div class="column large6 medium10 small12 right">
+                <span style="font-size: 36px; font-weight: 200">Checkbox</span><br><br><br>
+                <div  class="column large6 medium4 small4">
+                    <p>Checked</p>
+                    <div class="check">Checked : &nbsp;&nbsp;
+                            <input type="checkbox" checked/>
+                            <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div  class="column large6 medium4 small4 right">
+                    <p>Unchecked</p>
+                    <div class="check">Unchecked : &nbsp;&nbsp;
+                            <input type="checkbox"/>
+                            <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <h2>Advanced Inputs</h2>
+            <div class="column large6 medium6 small12">
+                    <span style="font-size: 36px; font-weight: 200">Searchbox</span><br><br><br>
+                    <span class="search_box" tabindex="1234">
+                    <button><i class="ms-Icon ms-Icon--Search" aria-hidden="true"></i></button>
+                    <input type="search" placeholder="Search">
+                    </span><br><br>
+            </div>
+            <div class="column large6 medium6 small12 right">
+                    <span style="font-size: 36px; font-weight: 200">Dropdown</span><br><br><br>
+                    <select>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </div>
+            <div class="column large6 medium6 small12">
+                    <span style="font-size: 36px; font-weight: 200">Dropdown Advanced</span><br><br><br>
+                    <div class="drop_container">
+                        <span class="drop_val" id="drop_value">Select an option</span><input class="drop" type="checkbox"><br>
+                        <div class="opt_group zi2">
+                            <span class="drop_val">Option a</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option a'">
+                            <span class="drop_val">Option b</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option b'">
+                            <span class="drop_val">Option c</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option c'">
+                            <span class="drop_val">Option d</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option d'">
+                            <span class="drop_val">Option e</span><input class="drop_opt" type="radio" name="dropdown" onclick="document.getElementById('drop_value').innerHTML = 'Option e'">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <script>
+                var slider = document.getElementById("slider");
+                var output = document.getElementById("slidervalue");
+                output.innerHTML = slider.value;
+    
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }
+        </script>
+        <footer class="column large12 medium12 small12 primary_green">Fork The Project From <a href="https://github.com/shivendrasaurav/Fluent-Design-For-Web/">Github</a></footer>
+    </body>
+</html>
