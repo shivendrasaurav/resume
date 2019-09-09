@@ -114,8 +114,8 @@ footer{position: relative;}
 .primary_red{background: #e50c55; color:#FFF;}
 .primary_yellow{background: #CCC908; color:#1A1A1A;}
 .primary_inverted{background: #1E1E1E; color:#FFF;}
-.primary_blue_title{background: linear-gradient(to bottom right, #08415C , #0F75A7 75%); color:#FFF;}
-
+.primary_blue_title{background: linear-gradient(to bottom right, #08415CCC , #16B9DDCC 70%); color:#FFF;}
+/*repeating-linear-gradient(45deg, #16B9DD 50px, #0094DD 60px)*/
 
 .secondary_blue{background: #06A7DD; color:#FFF;}
 .secondary_green{background: #06A77D; color:#FFF;}
