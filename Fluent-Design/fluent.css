@@ -529,7 +529,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     height: 0;
     font-size: 0px;
     opacity: 0;
-    margin-top:-50px;
+    margin-top:24px;
 }
 .tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 16px; padding: 15px; overflow-y: auto;}
 
