@@ -22,3 +22,7 @@ button.small{
 span.frost{
     font-size: 16px;
 }
+
+.title_card{
+    background: linear-gradient(30deg,  #FF9900, #F20076);
+}
