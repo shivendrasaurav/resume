@@ -1,0 +1,24 @@
+h1, h5{
+    font-family: 'Chalet NewYorkNineteenSixty';
+}
+
+#head a{
+    color: #fff;
+    font-family: 'Chalet NewYorkNineteenSixty';
+    font-size: 22px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+#head a i{
+    font-size: 22px;
+}
+button.small{
+    color: #fff;
+    min-width: 100px;
+    font-size: 20px;
+    font-family: 'Chalet NewYorkNineteenSixty';
+}
+
+span.frost{
+    font-size: 16px;
+}
