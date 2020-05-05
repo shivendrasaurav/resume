@@ -9,6 +9,9 @@ h1, h5{
     text-decoration: none;
     margin-top: 8px;
 }
+a::before, a:hover::before{
+    background: #FFF;
+}
 #head a i{
     font-size: 22px;
 }
